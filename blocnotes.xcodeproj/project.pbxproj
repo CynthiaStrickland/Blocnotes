@@ -15,6 +15,7 @@
 		3D3E0FB01B3CB7CD008194EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3E0FAF1B3CB7CD008194EE /* Images.xcassets */; };
 		3D3E0FB31B3CB7CD008194EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3E0FB11B3CB7CD008194EE /* LaunchScreen.xib */; };
 		3D3E0FBF1B3CB7CD008194EE /* blocnotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E0FBE1B3CB7CD008194EE /* blocnotesTests.swift */; };
+		3D3E0FC91B3CC076008194EE /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E0FC81B3CC076008194EE /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3D3E0FB81B3CB7CD008194EE /* blocnotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blocnotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3E0FBD1B3CB7CD008194EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3E0FBE1B3CB7CD008194EE /* blocnotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blocnotesTests.swift; sourceTree = "<group>"; };
+		3D3E0FC81B3CC076008194EE /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				3D3E0FA31B3CB7CD008194EE /* AppDelegate.swift */,
 				3D3E0FA81B3CB7CD008194EE /* MasterViewController.swift */,
 				3D3E0FAA1B3CB7CD008194EE /* DetailViewController.swift */,
+				3D3E0FC81B3CC076008194EE /* Note.swift */,
 				3D3E0FAC1B3CB7CD008194EE /* Main.storyboard */,
 				3D3E0FAF1B3CB7CD008194EE /* Images.xcassets */,
 				3D3E0FB11B3CB7CD008194EE /* LaunchScreen.xib */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3E0FC91B3CC076008194EE /* Note.swift in Sources */,
 				3D3E0FA41B3CB7CD008194EE /* AppDelegate.swift in Sources */,
 				3D3E0FA71B3CB7CD008194EE /* blocnotes.xcdatamodeld in Sources */,
 				3D3E0FA91B3CB7CD008194EE /* MasterViewController.swift in Sources */,
