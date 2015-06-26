@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2753981B3D0CBA009D1408 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2753971B3D0CBA009D1408 /* Event.swift */; };
 		3D3E0FA41B3CB7CD008194EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E0FA31B3CB7CD008194EE /* AppDelegate.swift */; };
 		3D3E0FA71B3CB7CD008194EE /* blocnotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E0FA51B3CB7CD008194EE /* blocnotes.xcdatamodeld */; };
 		3D3E0FA91B3CB7CD008194EE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E0FA81B3CB7CD008194EE /* MasterViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2753971B3D0CBA009D1408 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		3D3E0F9E1B3CB7CD008194EE /* blocnotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blocnotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3E0FA21B3CB7CD008194EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3E0FA31B3CB7CD008194EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				3D3E0FA31B3CB7CD008194EE /* AppDelegate.swift */,
 				3D3E0FA81B3CB7CD008194EE /* MasterViewController.swift */,
 				3D3E0FAA1B3CB7CD008194EE /* DetailViewController.swift */,
+				3D2753971B3D0CBA009D1408 /* Event.swift */,
 				3D3E0FC81B3CC076008194EE /* Note.swift */,
 				3D3E0FAC1B3CB7CD008194EE /* Main.storyboard */,
 				3D3E0FAF1B3CB7CD008194EE /* Images.xcassets */,
@@ -225,6 +228,7 @@
 				3D3E0FA41B3CB7CD008194EE /* AppDelegate.swift in Sources */,
 				3D3E0FA71B3CB7CD008194EE /* blocnotes.xcdatamodeld in Sources */,
 				3D3E0FA91B3CB7CD008194EE /* MasterViewController.swift in Sources */,
+				3D2753981B3D0CBA009D1408 /* Event.swift in Sources */,
 				3D3E0FAB1B3CB7CD008194EE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +427,7 @@
 				3D3E0FC41B3CB7CD008194EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D3E0FC51B3CB7CD008194EE /* Build configuration list for PBXNativeTarget "blocnotesTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				3D3E0FC71B3CB7CD008194EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -18,6 +18,8 @@ var noteTable:UITableView?  //References the table of notes.  Unable to instanti
 
 //********** ? and !   ---- means the variable could possibly be null.  If you use the ? if the value is nil then nothing afterward will run.  If you use the ! and the value is NOT nill then you will get an error in the application.  
 
+let kallNotes:String = "notes"
+
 
 class Note: NSObject {
    
@@ -35,7 +37,7 @@ class Note: NSObject {
         note = ""
     }
     
-    func ditionary() -> NSDictionary {
+    func dictionary() -> NSDictionary {
         return ["note":note, "date":date]    //shorthand dictionary...key:value, key:value
     }
     
@@ -48,9 +50,16 @@ class Note: NSObject {
             //var i is going to be an int, initialized as 0, AS LONG AS i is less than allNotes.count and i++
             aDictionaries.append(allNotes[i].dictionary())
         }
+        NSUserDefaults.standardUserDefaults().setObject(aDictionaries, forKey:kAllNotes)
     
 }
 
+    class func loadNotes() {
+        var defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        var savedData:[NSDictionary]? = defaults.objectForKey(kallNotes) as? [NSDictionary]
+        savedData?.count
+        
+    }
     
     
 }
