@@ -8,7 +8,7 @@
 
 import UIKit
 
-var allNotes:[Note] = []    //Global Variable --> An array of notes representing notes we are creating.               
+var allNotes:[Note] = []    //Global Variable --> An array of notes representing notes we are creating.
                             //Initialized to an empty array.
 var currentNoteIndex:Int = -1       //Refers tot he current index in the note array.  Once we select
                                     //a note to edit, the current note index is going to save it
@@ -50,16 +50,21 @@ class Note: NSObject {
             //var i is going to be an int, initialized as 0, AS LONG AS i is less than allNotes.count and i++
             aDictionaries.append(allNotes[i].dictionary())
         }
-        NSUserDefaults.standardUserDefaults().setObject(aDictionaries, forKey:kAllNotes)
+        NSUserDefaults.standardUserDefaults().setObject(aDictionaries, forKey: kallNotes)
     
 }
 
     class func loadNotes() {
         var defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         var savedData:[NSDictionary]? = defaults.objectForKey(kallNotes) as? [NSDictionary]
-        savedData?.count
+        
+        if let data:[NSDictionary] = savedData {
+            for  var i:Int = 0; i < data.count; i++ {
+                var n:Note = Note()
+                n.setValuesForKeysWithDictionary(data[i] as [NSObject : AnyObject]);allNotes.append(n)
+        }
         
     }
     
-    
+    }
 }

@@ -25,6 +25,14 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Loading Notes
+        
+        Note.loadNotes()      //loads the notes.  should not have any data to start out
+        println("allNotes: \(allNotes)")    // see what is in the allNotes array
+        var n:Note = Note()     //create a new note and add it to allNotes array
+        Note.saveNotes()        //save the note
+        noteTable = self.tableView
+        
         
         //noteTable = self.UITableView
         
